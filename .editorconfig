@@ -1,0 +1,13 @@
+# Tells the editor to use this file and stop searching for other .editorconfig files
+root = true
+
+# Rules for all files
+[*]
+end_of_line = lf
+insert_final_newline = true
+charset = utf-8
+trim_trailing_whitespace = true
+
+# C# files
+[*.cs]
+csharp_style_namespace_declarations = file_scoped:suggestion
