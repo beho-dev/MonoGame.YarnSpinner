@@ -1,4 +1,3 @@
-using System.IO;
 using Microsoft.Xna.Framework.Content.Pipeline;
 
 namespace MonoGame.YarnSpinner;
