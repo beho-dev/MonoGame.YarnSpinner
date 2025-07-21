@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoGame.YarnSpinner", "MonoGame.YarnSpinner\MonoGame.YarnSpinner.csproj", "{4B4B7782-F8A1-4EDB-B60E-5F60884835AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoGame.YarnSpinner.Tests", "MonoGame.YarnSpinner.Tests\MonoGame.YarnSpinner.Tests.csproj", "{9AE5968E-9292-470D-A887-5C6E57287EBA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4B4B7782-F8A1-4EDB-B60E-5F60884835AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B4B7782-F8A1-4EDB-B60E-5F60884835AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B4B7782-F8A1-4EDB-B60E-5F60884835AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B4B7782-F8A1-4EDB-B60E-5F60884835AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{145BF2A9-A383-430B-BC17-2520242E396D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{145BF2A9-A383-430B-BC17-2520242E396D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{145BF2A9-A383-430B-BC17-2520242E396D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{145BF2A9-A383-430B-BC17-2520242E396D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9AE5968E-9292-470D-A887-5C6E57287EBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AE5968E-9292-470D-A887-5C6E57287EBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AE5968E-9292-470D-A887-5C6E57287EBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AE5968E-9292-470D-A887-5C6E57287EBA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

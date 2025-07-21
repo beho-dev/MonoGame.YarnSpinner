@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MonoGame.Framework.Content.Pipeline" Version="3.8.1.303" />
+    <PackageReference Include="MonoGame.Framework.DesktopGL" Version="3.8.1.303" />
+    <PackageReference Include="YarnSpinner.Compiler" Version="3.0.2" />
+  </ItemGroup>
+
+  <Target Name="CopyYarnCompilerToOutput" AfterTargets="Build">
+    <ItemGroup>
+      <YarnSpinnerCompilerAssembly Include="$(NugetPackageRoot)/yarnspinner.compiler/3.0.2/lib/netstandard2.0/YarnSpinner.Compiler.dll" />
+      <GoogleProtobufAssembly Include="$(NugetPackageRoot)/google.protobuf/3.25.2/lib/netstandard2.0/Google.Protobuf.dll" />
+      <Antlr4Assembly Include="$(NugetPackageRoot)/antlr4.runtime.standard/4.13.1/lib/netstandard2.0/Antlr4.Runtime.Standard.dll" />
+    </ItemGroup>
+    <Copy SourceFiles="@(YarnSpinnerCompilerAssembly)" DestinationFolder="$(TargetDir)" />
+    <Copy SourceFiles="@(GoogleProtobufAssembly)" DestinationFolder="$(TargetDir)" />
+    <Copy SourceFiles="@(Antlr4Assembly)" DestinationFolder="$(TargetDir)" />
+  </Target>
+
+</Project>
