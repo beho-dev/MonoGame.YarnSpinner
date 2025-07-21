@@ -1,6 +1,8 @@
 # MonoGame.YarnSpinner
 
-A reusable MonoGame Content Pipeline extension for importing and processing Yarn Spinner files (`.yarn`).
+This project is a library for adding video game text written in Yarn Spinner to MonoGame projects.
+
+It does this by providing a MonoGame Content Pipeline extension for importing and processing Yarn Spinner files (`.yarn`).
 
 This library provides the necessary `Importer`, `Processor`, `Writer`, and `Reader` to allow `.yarn` script files to be processed directly by the MonoGame Content Pipeline (MGCB), making dialogue integration seamless.
 
@@ -13,10 +15,15 @@ This library provides the necessary `Importer`, `Processor`, `Writer`, and `Read
 ## Usage
 
 1.  Reference this project in your MonoGame project.
-2.  Add your `.yarn` files to your `Content.mgcb` file.
-3.  Set the Importer to `YarnImporter - MonoGame.YarnSpinner`.
-4.  Set the Processor to `YarnProcessor - MonoGame.YarnSpinner`.
-5.  Load your compiled Yarn scripts in-game using:
+2.  In your `Content.mgcb` file, add a reference to `MonoGame.YarnSpinner.dll`. You'll need to provide a relative path from your `.mgcb` file to the DLL. For example:
+    ```
+    /reference:../MonoGame.YarnSpinner/bin/Debug/net8.0/MonoGame.YarnSpinner.dll
+    ```
+    > **Note:** Adjust the path to match your project's folder structure.
+3.  Add your `.yarn` files to your `Content.mgcb` file.
+4.  Set the Importer to `YarnImporter - MonoGame.YarnSpinner`.
+5.  Set the Processor to `YarnProcessor - MonoGame.YarnSpinner`.
+6.  Load your compiled Yarn scripts in-game using:
     ```csharp
     var compiledScript = Content.Load<CompiledYarnProgram>("MyYarnScript");
     ```
